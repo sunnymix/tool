@@ -11,7 +11,7 @@ ngx.say([[
 <body>
 <div class="container-sm">
   <div class="d-flex align-items-center">
-    <div class="p-2"><input type="text" class="form-control" id="url" placeholder="URL"></div>
+    <div class="flex-grow-1 p-2"><input type="text" class="form-control" id="url" placeholder="URL"></div>
     <div class="p-2"><button type="button" class="btn btn-primary" id="gethtml"> GET HTML </button></div>
   </div>
   <div class="p-2">
