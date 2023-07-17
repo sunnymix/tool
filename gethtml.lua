@@ -26,7 +26,7 @@ $(document).ready(function(){
     var url = $("#url").val();
     $.ajax({
       url: url,
-      method: "GET,
+      method: "GET",
       success: function(response) {
         console.log(response);
       },
