@@ -11,9 +11,9 @@ ngx.say([[
 <body>
 <div class="container-sm">
   <div class="d-flex flex-row p-2">
-    <label for="url" class="form-label">URL</label>
-    <input type="text" class="form-control" id="url" placeholder="URL">
-    <button type="button" class="btn btn-primary" id="gethtml"> GET HTML </button>
+    <div class="d-inline-flex"><label for="url" class="form-label">URL</label></div>
+    <div class="d-inline-flex"><input type="text" class="form-control" id="url" placeholder="URL"></div>
+    <div class="d-inline-flex"><button type="button" class="btn btn-primary" id="gethtml"> GET HTML </button></div>
   </div>
 </div>
 <script>
