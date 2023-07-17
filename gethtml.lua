@@ -15,6 +15,12 @@ ngx.say([[
     <div class="d-inline-flex p-2"><input type="text" class="form-control" id="url" placeholder="URL"></div>
     <div class="d-inline-flex p-2"><button type="button" class="btn btn-primary" id="gethtml"> GET HTML </button></div>
   </div>
+  <div>
+    <div class="input-group">
+      <span class="input-group-text">HTML</span>
+      <textarea class="form-control"></textarea>
+    </div>
+  </div>
 </div>
 <script>
 $(document).ready(function(){
