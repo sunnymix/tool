@@ -21,9 +21,20 @@ ngx.say([[
 </div>
 <script>
 $(document).ready(function(){
-  $("gethtml").click(function(){
+  $("#gethtml").click(function(){
     alert("hello");
-});
+    var url = $("#url").val();
+    $.ajax({
+      url: url,
+      method: "GET,
+      success: function(response) {
+        console.log(response);
+      },
+      error: function(error) {
+        console.log("Error: ", error);
+      }
+    });
+  });
 });
 </script>
 </body>
