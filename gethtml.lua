@@ -10,17 +10,11 @@ ngx.say([[
 </head>
 <body>
 <div class="container-sm">
-  <div class="row g-3">
-    <div class="col-auto">
-      <label for="url" class="form-label">URL</label>
-    </div>
-    <div class="col-auto">
-      <input type="text" class="form-control" id="url" placeholder="URL">
-    </div>
-    <div class="col-auto">
-      <button type="button" class="btn btn-primary" id="gethtml"> GET HTML </button>
-    </div>
-  </form>
+  <div class="d-flex p-2">
+    <label for="url" class="form-label">URL</label>
+    <input type="text" class="form-control" id="url" placeholder="URL">
+    <button type="button" class="btn btn-primary" id="gethtml"> GET HTML </button>
+  </div>
 </div>
 <script>
 $(document).ready(function(){
