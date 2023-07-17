@@ -12,13 +12,13 @@ ngx.say([[
 <div class="container-sm">
   <form class="row g-3">
     <div class="col-auto">
-      <label for="staticEmail2">URL</label>
+      <label for="url" class="form-label">URL</label>
     </div>
     <div class="col-auto">
       <input type="text" class="form-control" id="url" placeholder="URL">
     </div>
     <div class="col-auto">
-      <button type="button" class="btn btn-primary mb-3"> GET HTML< /button>
+      <button type="button" class="btn btn-primary mb-3" id="gethtml"> GET HTML </button>
     </div>
   </form>
 </div>
