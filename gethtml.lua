@@ -9,12 +9,12 @@ ngx.say([[
   <script src="https://cdn.bootcdn.net/ajax/libs/twitter-bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body>
-<div class="container-md">
+<div class="container-sm">
   <br />
   <label for="gethtml" class="form-label">GET HTML</label>
   <div class="input-group mb-3">
     <input type="text" class="form-control" placeholder="URL">
-    <button class="btn btn-primary" type="button" id="gethtml"> GET HTML </button>
+    <button class="btn btn-primary" type="button" id="gethtml"> GET </button>
   </div>
 </div>
 <script>
