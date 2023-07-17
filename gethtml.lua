@@ -12,15 +12,13 @@ ngx.say([[
 <div class="container-sm">
   <form class="row g-3">
     <div class="col-auto">
-      <label for="staticEmail2" class="visually-hidden">Email</label>
-      <input type="text" readonly class="form-control-plaintext" id="staticEmail2" value="email@example.com">
+      <label for="staticEmail2">URL</label>
     </div>
     <div class="col-auto">
-      <label for="inputPassword2" class="visually-hidden">Password</label>
-      <input type="password" class="form-control" id="inputPassword2" placeholder="Password">
+      <input type="text" class="form-control" id="url" placeholder="URL">
     </div>
     <div class="col-auto">
-      <button type="submit" class="btn btn-primary mb-3">Confirm identity</button>
+      <button type="button" class="btn btn-primary mb-3"> GET HTML< /button>
     </div>
   </form>
 </div>
