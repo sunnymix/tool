@@ -10,12 +10,11 @@ ngx.say([[
 </head>
 <body>
 <div class="container-sm">
-  <div class="d-flex flex-row align-items-center p-2">
-    <div class="d-inline-flex p-2"><b>URL</b></div>
-    <div class="d-inline-flex p-2"><input type="text" class="form-control" id="url" placeholder="URL"></div>
-    <div class="d-inline-flex p-2"><button type="button" class="btn btn-primary" id="gethtml"> GET HTML </button></div>
+  <div class="d-flex align-items-center">
+    <div class="p-2"><input type="text" class="form-control" id="url" placeholder="URL"></div>
+    <div class="p-2"><button type="button" class="btn btn-primary" id="gethtml"> GET HTML </button></div>
   </div>
-  <div>
+  <div class="p-2">
     <textarea class="form-control"></textarea>
   </div>
 </div>
