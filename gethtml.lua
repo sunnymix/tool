@@ -10,7 +10,7 @@ ngx.say([[
 </head>
 <body>
 <div class="container-sm">
-  <div class="d-flex p-2">
+  <div class="d-flex flex-row p-2">
     <label for="url" class="form-label">URL</label>
     <input type="text" class="form-control" id="url" placeholder="URL">
     <button type="button" class="btn btn-primary" id="gethtml"> GET HTML </button>
