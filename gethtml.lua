@@ -10,10 +10,11 @@ ngx.say([[
 </head>
 <body>
 <div class="container-md">
-  <label for="gethtml" class="form-label">URL</label>
+  <br />
+  <label for="gethtml" class="form-label">GET HTML</label>
   <div class="input-group mb-3">
     <input type="text" class="form-control" placeholder="URL">
-    <button class="btn btn-primary" type="button" id="gethtml">GET</button>
+    <button class="btn btn-primary" type="button" id="gethtml"> GET HTML </button>
   </div>
 </div>
 <script>
