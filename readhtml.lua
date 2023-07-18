@@ -1,20 +1,17 @@
-ngx.header["Content-Type"] = "text/html; charset=utf-8"
+ngx.header["Content-Type"] = "text/plain; charset=utf-8"
 
-local http = require "resty.http"
-
-local httpc = http.new()
-
-local res, err = httpc:request_uri("https://www.gmpsop.com/gmp_documents/qms-020/", {
-    method = "GET"
-})
-
-if not res then
-    ngx.say("请求失败: ", err)
+local ok, out = require "resty.shell".run([[wget -O /tmp/qms-020.html https://www.gmpsop.com/gmp_documents/qms-020/]])
+if not ok then
+    ngx.say("wget error" .. "<br />")
     return
 end
 
-ngx.say("响应状态码: ", res.status)
+ngx.say("wget ok" .. "<br />")
 
-ngx.say("响应内容: ", res.body)
+local ok, content = require "resty.shell".run([[cat /tmp/qms-020.html]])
+if not content then
+    ngx.say("cat error:" .. content .. "<br />")
+    return
+end
 
-httpc:close()
+ngx.say(content)
