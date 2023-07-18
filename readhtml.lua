@@ -1,3 +1,5 @@
+ngx.header["Content-Type"] = "text/html; charset=utf-8"
+
 local http = require "resty.http"
 
 local httpc = http.new()
