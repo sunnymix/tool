@@ -8,6 +8,7 @@ if ngx.var.request_method =="OPTIONS"then
 end
 
 ngx.header["Content-Type"] = "text/html; charset=utf-8"
+
 ngx.say([[
 <!DOCTYPE html>
 <html>
