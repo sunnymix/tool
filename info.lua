@@ -14,7 +14,7 @@ ngx.say("wget ok" .. "<br />")
 
 local ok, content = require "resty.shell".run([[cat /tmp/qms-020.html]])
 if not ok then
-	ngx.say("cat error(" .. ok .. "):" .. content .. "<br />")
+	ngx.say("cat error:" .. content .. "<br />")
 	return
 end
 
