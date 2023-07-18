@@ -13,10 +13,11 @@ end
 ngx.say("wget ok" .. "<br />")
 
 local ok, content = require "resty.shell".run([[cat /tmp/qms-020.html]])
-if not ok then
+if not content then
 	ngx.say("cat error:" .. content .. "<br />")
 	return
 end
 
-ngx.say(content)
-
+ngx.say([[
+<textarea>]] .. content .. [[</textarea>
+]])
