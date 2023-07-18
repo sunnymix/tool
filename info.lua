@@ -4,12 +4,19 @@ ngx.say(package.path .. "<br />")
 
 ngx.say("---" .. "<br />")
 
-local ok, out = require "resty.shell".run([[wget -P /tmp/qms-020 https://www.gmpsop.com/gmp_documents/qms-020/]])
+local ok, out = require "resty.shell".run([[wget -O /tmp/qms-020.html https://www.gmpsop.com/gmp_documents/qms-020/]])
 if not ok then
-	ngx.say("cannot exe shell" .. "<br />")
+	ngx.say("wget error" .. "<br />")
 	return
 end
 
-ngx.say(out .. "<br />")
+ngx.say("wget ok" .. "<br />")
 
+local ok, content = require "resty.shell".run([[cat /tmp/qms-020.html]])
+if not ok then
+	ngx.say("cat error" .. "<br />")
+	return
+end
+
+ngx.say(content)
 
